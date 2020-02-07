@@ -1,0 +1,149 @@
+.mobile.tablet.only.row {
+  padding: 0 !important;
+}
+.brand {
+  width: 120px !important;
+  height: 90px !important;
+  img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    @include mobile {
+      top: 60%;
+    }
+  }
+  @include mobile {
+    width: 100px !important;
+    height: 80px !important;
+    margin-left: 1em !important;
+  }
+  @include tablet {
+    margin-left: 1em !important;
+  }
+}
+
+.main_menu {
+  background: rgba(37, 43, 80, 0.9) !important;
+  border: none !important;
+  box-shadow: none !important;
+  @include desktop {
+    padding-left: 2em;
+    padding-right: 5em;
+  }
+
+}
+    .item {
+      color: white !important;
+      font-size: 12px;
+      font-weight: 600 !important;
+      border: none;
+      text-transform: uppercase !important;
+      &.active {
+        background-image: linear-gradient(
+          -100deg,
+          rgba(255, 255, 255, 0),
+          $cyber-blue 85%,
+          rgba(255, 255, 255, 0)
+        ) !important
+      }
+
+  .item.dropdown{
+    &.selected{
+      background-image: linear-gradient(
+        -100deg,
+        rgba(255, 255, 255, 0),
+        $cyber-blue 85%,
+        rgba(255, 255, 255, 0)
+      ) !important;
+    }
+    &.visible.active {
+      background: #252b50e6 !important;
+    }
+  }
+}
+
+
+.mobile_menu {
+  background: $purple !important;
+  width: 100%;
+  .item {
+    color: white !important;
+    font-size: 1.8rem;
+  }
+}
+
+.scrolled-nav {
+  background: rgba(34, 41, 77, 0.925) !important;
+}
+
+.pushable.segment {
+  margin: 0 !important;
+}
+
+#content {
+  min-height: 100px;
+}
+
+.sidebar.menu {
+  height: 100vh !important;
+  margin-top: 6.5em !important;
+  background: $purple !important;
+  .item {
+    color: white !important;
+    font-size: 1.3rem;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.452);
+  }
+}
+
+/*-------------------------------------------------------footer-------------------------------*/
+.footer.segment {
+  padding: 5em 0em;
+  background-color: rgb(38, 44, 79) !important;
+
+  @include mobile {
+    .three.wide.column {
+      text-align: center;
+    }
+  }
+  .logo-text {
+    color: black;
+    display: inline-block !important;
+    font-weight: 700 !important;
+    font-size: 2rem !important;
+  }
+
+  .item {
+    margin-bottom: 1em;
+    span {
+      font-size: 12px !important;
+      text-transform: uppercase;
+      margin-bottom: 1.5em;
+      color: white;
+    }
+  }
+
+  hr {
+    border-bottom: 1px solid $cyber-blue !important;
+    margin-top: 2em !important;
+    margin-bottom: 2em !important;
+  }
+
+  copyright-info {
+    text-transform: uppercase;
+  }
+
+  .social-container {
+    display: flex !important;
+    justify-content: space-around !important;
+    .social-item {
+      color: white !important;
+      i.icon {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+.ui.header:first-child {
+  margin-top: 20px !important;
+}

@@ -1,0 +1,84 @@
+.contact-form {
+  h1 {
+    display: inline-block;
+  }
+
+  h3 {
+    color: black !important;
+    margin-top: 2em !important;
+  }
+
+  padding-top: 5em;
+  padding-bottom: 10em;
+
+  @include mobile {
+    padding-top: 8em;
+    padding-bottom: 5em;
+  }
+
+  input,
+  textarea {
+    width: 100% !important;
+    border-radius: 0 !important;
+
+    &::placeholder {
+      color: lighten($black, 40%) !important;
+    }
+  }
+
+  .submit {
+    padding: 1.2em 2.4em !important;
+    background: $cyber-blue !important;
+    color: white !important;
+    display: block;
+  }
+}
+
+
+
+.application-form {
+  padding-top: 3em;
+  padding-bottom: 3em;
+
+  .application_form_title {
+    color: $black !important;
+  }
+
+  .form-accordion {
+    width: 100% !important;
+
+    .title {
+      color: $black !important;
+      font-size: 1.2em !important;
+    }
+  }
+
+
+  .ui.action {
+    input[type='file'] {
+      border: 1px solid $grey !important;
+      background: lighten($cyber-blue, 40%) !important;
+    }
+
+    i {
+      color: black;
+    }
+  }
+
+  .selection,
+  input,
+  textarea {
+    border-color: $black;
+    border-radius: 0 !important;
+
+    &::placeholder {
+      color: lighten($black, 40%) !important;
+    }
+  }
+
+  .ui.submit {
+    background: $purple !important;
+    font-size: 1.2em !important;
+    width: 100% !important;
+  }
+}

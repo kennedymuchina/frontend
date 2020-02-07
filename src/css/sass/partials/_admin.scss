@@ -1,0 +1,68 @@
+.admin_column {
+  .admin_grid {
+    margin-top: 5em;
+  }
+  .admin_side_menu {
+    min-height: 100vh;
+    background: $light-blue !important;
+    position: fixed;
+    width: 10% !important;
+
+    .item {
+      font-size: 16px;
+      margin-bottom: 20px !important;
+      display: inline-block;
+    }
+  }
+
+  .admin_menu {
+    background: #3495d6c5 !important;
+    min-height: 100px !important;
+    .header.item{
+      width: 9%;
+    }
+    .item {
+      font-size: 16px;
+      color: white !important;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      height: 100px;
+    }
+    .active.item{
+      background: $purple !important;
+    }
+  }
+
+  table {
+    font-size: 0.9em !important;
+  }
+}
+
+.redli{
+  background: rgba(242, 94, 92, 0.897)!important;
+}
+
+#calendar .datepicker{
+  width: auto;
+  max-width: 100%;
+}
+
+#calendar .table-condensed {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+
+.datepicker-days td{
+  font-weight: 600;
+  font-size: 12px;
+}
+.header-segment{
+  height: 60px !important;
+  h5 {
+    color: black !important;
+    margin-top: 0px !important;
+    font-size: 14px !important;
+  }
+}
